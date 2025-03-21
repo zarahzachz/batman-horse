@@ -1,0 +1,41 @@
+.welcome {
+  margin-block-start: 2em;
+  padding: 0.5em;
+
+  h1 {
+    display: grid;
+    line-height: 1.1;
+    font-size: var(--step-2);
+    font-weight: 400;
+    margin-block-end: 2em;
+
+    .intro {
+      font-size: var(--step-5);
+      font-weight: 600;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .social {
+    text-decoration: none;
+    background-color: CanvasText;
+    color: Canvas;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+
+    &:hover {
+      background-color: color-mix(in oklch, CanvasText, Canvas 30%);
+    }
+  }
+}
+
+.trim-width:has(.welcome) {
+  display: grid;
+  min-height: 100svh;
+  place-content: center;
+}
